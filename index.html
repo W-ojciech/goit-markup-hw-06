@@ -51,7 +51,7 @@
     <!-- HEADER -->
     <header class="head">
         <h1 class="heading1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="head-button" data-modal-open>Zamów usługe</button>
+        <button type="button" class="open-modal-button" data-modal-open>Zamów usługe</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal-body">
                 <button class="close-modal-button" data-modal-close>
@@ -59,6 +59,35 @@
                         <use href="./images/icons.svg#icon-close" />
                     </svg>
                 </button>
+
+                <form name="send-comment-form">
+                    <p>Zostaw swoje dane w formularzu poniżej</p>
+                    <div class="inputs-container" role="form-inputs">
+                        <label>
+                            Imię
+                            <input type="text" name="username" class="basic-input" />
+                        </label>
+                        <label>
+                            Telefon
+                            <input type="tel" name="phone" class="basic-input" />
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="kontakt-email" class="basic-input" />
+                        </label>
+                        <label>
+                            Komentarz
+                            <textarea name="komentarz" placeholder="Wprowadź tekst"></textarea>
+                        </label>
+                    </div>
+                    <label class="checbox-rules">
+                        <input class="checkbox-rules" type="checkbox" name="regulamin" />
+                        Oświadczam iż akceptuję
+                        <a href="#">Regulamin</a> i
+                        <a href="#">Politykę Prywatności</a>.
+                    </label>
+                    <button class="send-form-button" type="submit">Wyślij</button>
+                </form>
             </div>
         </div>
     </header>
