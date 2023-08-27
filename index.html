@@ -96,7 +96,8 @@
                         </label>
                     </div>
                     <label class="rules-wraper">
-                        <input type="checkbox" name="accept-rules" required />
+                        <input type="checkbox" name="accept-rules" value="accept-rules" required
+                            title="Please accept rules!" />
                         <svg class="check-icon" width="16" height="15">
                             <use href="./images/icons.svg#icon-check-vector" />
                         </svg>
@@ -436,7 +437,8 @@
             <form name="join-to-newsletter-form" class="newsletter-form">
                 <label name="newsletter-form-title" for="newsletter-user-email">
                     zapisz się do newslettera
-                    <input id="newsletter-user-email" type="email" name="email-for-newsletter" placeholder="E-mail" />
+                    <input id="newsletter-user-email" type="email" name="email-for-newsletter" placeholder="E-mail"
+                        required />
                 </label>
                 <button type="submit" class="newsletter-button">
                     <span>Zapisz się</span>

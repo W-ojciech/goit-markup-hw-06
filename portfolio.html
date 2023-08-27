@@ -247,27 +247,29 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <a href="./index.html" class="link logo">
-                Web<span class="accent2">Studio</span>
-            </a>
-            <address id="contact-address">
-                <ul>
-                    <li class="contact2">
-                        <a href="https://goo.gl/maps/GoScVA1be1kBNJ3W7" target="_blank" rel="noreferrer noopener"
-                            class="link">
-                            m. Warszawa, Aleje Jerozolimskie 21
-                        </a>
-                    </li>
-                    <li class="contact3">
-                        <a href="mailto:info@example.com" class="link">info@example.com</a>
-                    </li>
-                    <li class="contact3">
-                        <a href="tel:+4793921911" class="link">+48 111 111 111</a>
-                    </li>
-                </ul>
-            </address>
+            <div>
+                <a href="./index.html" class="link logo">
+                    Web<span class="accent2">Studio</span>
+                </a>
+                <address id="contact-address">
+                    <ul>
+                        <li class="contact2">
+                            <a href="https://goo.gl/maps/GoScVA1be1kBNJ3W7" target="_blank" rel="noreferrer noopener"
+                                class="link">
+                                m. Warszawa, Aleje Jerozolimskie 21
+                            </a>
+                        </li>
+                        <li class="contact3">
+                            <a href="mailto:info@example.com" class="link">info@example.com</a>
+                        </li>
+                        <li class="contact3">
+                            <a href="tel:+4793921911" class="link">+48 111 111 111</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
             <div class="social-box">
                 <p>Dołącz do nas</p>
                 <ul class="social-links">
@@ -301,6 +303,19 @@
                     </li>
                 </ul>
             </div>
+            <form name="join-to-newsletter-form" class="newsletter-form">
+                <label name="newsletter-form-title" for="newsletter-user-email">
+                    zapisz się do newslettera
+                    <input id="newsletter-user-email" type="email" name="email-for-newsletter" placeholder="E-mail"
+                        required />
+                </label>
+                <button type="submit" class="newsletter-button">
+                    <span>Zapisz się</span>
+                    <svg width="24" height="24" class="icon-send">
+                        <use href="./images/icons.svg#icon-send" />
+                    </svg>
+                </button>
+            </form>
         </div>
     </footer>
 
